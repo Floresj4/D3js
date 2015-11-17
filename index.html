@@ -6,30 +6,16 @@
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script src='./scripts/demo.js'></script>
 	<style type='text/css'>
-	.chart div {
-	  font: 10px sans-serif;
-	  background-color: steelblue;
-	  text-align: right;
-	  padding: 10px;
-	  margin: 3px;
-	  color: white;
-	}
+		.chart div {
+			font: 10px sans-serif;
+			background-color: steelblue;
+			text-align: right;
+			padding: 10px;
+			margin: 3px;
+			color: white;
+		}
 	</style>
 	<script type='text/javascript'>
-		function my_code(){
-		var x = d3.scale.linear()
-			.domain([0, d3.max(data)])
-			.range([0, 420]);
-
-		d3.select(".chart")
-		  .selectAll("div")
-			.data(data)
-		  .enter().append("div")
-			.style("width", function(d) { return x(d) + "px"; })
-			.text(function(d) { return d; });
-
-		}
-
 		window.onload=function() {
 			my_code();
 		};
@@ -42,4 +28,3 @@
 
 </body>
 </html>
-	
