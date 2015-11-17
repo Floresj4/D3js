@@ -1,0 +1,67 @@
+{
+	"week" : [
+		{
+			"stack":{
+				"protein": 1,
+				"effort": "endurance" }}
+		,{
+			"stack":{
+				"protein": 2,
+				"effort": "power" }}
+		,{
+			"stack":{
+				"protein": 2, 
+				"effort": "power" }}
+		,{
+			"stack":{
+				"protein": 1,
+				"effort": "endurance",
+				"stimulant": 1 }}
+		,{
+			"stack":{
+				"protein": 2,
+				"builder": 2,
+				"effort": "power",
+				"stimulant": 1 }}
+		,{
+			"stack":{
+				"protein": 2,
+				"builder": 2,
+				"effort": "power",
+				"stimulant": 1 }}
+		,{
+			"stack":{
+				"protein": 1,
+				"builder": 1,
+				"effort": "endurance" }}
+		,{
+			"stack":{
+				"protein": 2,
+				"builder": 2,
+				"effort": "power",
+				"stimulant": 1 }}
+		,{
+			"stack":{
+				"protein": 2,
+				"builder": 2,
+				"effort": "power",
+				"stimulant": 1 }}
+		,{
+			"stack":{
+				"protein": 1,
+				"effort": "endurance",
+				"stimulant": 1 }}
+		,{
+			"stack":{
+				"protein": 2,
+				"effort": "power" }}
+		,{
+			"stack":{
+				"protein": 2,
+				"effort": "power" }}
+		,{
+			"stack":{
+				"protein": 1,
+				"effort": "endurance" }}
+	]
+}
