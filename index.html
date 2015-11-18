@@ -6,25 +6,30 @@
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script src='./scripts/demo.js'></script>
 	<style type='text/css'>
-		.chart div {
-			font: 10px sans-serif;
-			background-color: steelblue;
-			text-align: right;
-			padding: 10px;
-			margin: 3px;
-			color: white;
+		body { 
+			font-size: 14px;
+			font-family: Verdana sans-serif;
+		}
+		.chart { padding:10px 0; }
+		.chart rect { fill: steelblue; }
+		.chart text {
+			fill: white;
+			front: 10px sans-serif;
+			text-anchor: end;
 		}
 	</style>
 	<script type='text/javascript'>
 		window.onload=function() {
-			my_code();
+			svg_build();
 		};
 	</script>
 </head>
 <body>
-
-	<div class='chart'>
+	
+	<div>
+		<svg class='chart'></svg>
 	</div>
-
+	
+	<a href='https://developer.mozilla.org/en-US/docs/Web/SVG'>SVG Reference</a>
 </body>
 </html>
