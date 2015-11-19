@@ -1,0 +1,24 @@
+body { 
+	font-size: 14px;
+	font-family: Verdana sans-serif;
+}
+.chart { padding:10px 0; }
+.chart rect { fill: steelblue; }
+.chart text {
+	fill: white;
+	front: 10px sans-serif;
+	text-anchor: end;
+}
+
+.axis text {
+	font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.axis path {
+  display: none;
+}
