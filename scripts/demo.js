@@ -1,45 +1,70 @@
 var data = [4, 8, 15, 16, 23, 42, 1, 9, 66, 42, 0, ];
 var margin = {top: 20, right: 30, bottom: 30, left:40};
+var width = 960 - margin.left - margin.right;
+var height = 500 - margin.top - margin.bottom;
 
 function build_vertical() {
-	//account for margins
-	var width = 960 - margin.left - margin.right;
-	var height = 500 - margin.top - margin.bottom;
-	
 	var yscale = d3.scale.linear()
 		.range([height, 0]);
 	
-	var oscale = d3.scale.ordinal()
+	var xscale = d3.scale.ordinal()
 		.rangeRoundBands([0, width], .1);
+	
+	//setup up the axis
+	var xAxis = d3.svg.axis()
+		.scale(xscale)
+		.orient("bottom");
+	
+	var yAxis = d3.svg.axis()
+		.scale(yscale)
+		.orient("left")
+		.ticks(10, "%");
 	
 	//select the chart & set
 	var chart = d3.select(".chart")
-		.attr("width", width)
-		.attr("height", height);
-		
+		.attr("width", width + margin.right + margin.left)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.right + ")");
+
 	//load data
 	d3.tsv("./scripts/data.tsv", type, function(error, data) {
-		
-		oscale.domain(data.map(function(d){ return d.letter; }));
-		
+
+		xscale.domain(data.map(function(d){ return d.letter; }));
 		yscale.domain([0, d3.max(data, function(d) { return d.value; })]);
-		
+
 		var barWidth = width / data.length;
-		
+
 		var bar = chart.selectAll("g")
 			.data(data)
 			.enter().append("g")
 			.attr("transform", function(d, i) {
-				return "translate(" + oscale(d.letter) + ", 0)"; 
+				return "translate(" + xscale(d.letter) + ", 0)"; 
 			});
-
+		
+		//add the axis bar
+		chart.append("g")
+			.attr("class", "axis x-axis")
+			.attr("transform", "translate(0," + height + ")")
+			.call(xAxis);
+		
+		chart.append("g")
+			.attr("class", "axis y-axis")
+			.call(yAxis)
+			.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("y", 6)
+			.attr("dy",  ".71em")
+			.style("text-anchor", "end")
+			.text("Frequency");
+		
 		bar.append("rect")
 			.attr("y", function(d) { return yscale(d.value); })
 			.attr("height", function(d) { return height - yscale(d.value); })
-			.attr("width", oscale.rangeBand());
+			.attr("width", xscale.rangeBand());
 
 		bar.append("text")
-			.attr("x", oscale.rangeBand() / 2)
+			.attr("x", xscale.rangeBand() / 2)
 			.attr("y", function(d) { return yscale(d.value) + 3; })
 			.attr("dy", ".75em")
 			.text(function(d) { return d.value; });
