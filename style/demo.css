@@ -1,0 +1,32 @@
+
+.chart {
+	padding:10px 0;
+    margin: 0 auto;
+    display: block;
+}
+.chart rect { 
+	fill: steelblue; 
+}
+.chart text {
+	fill: #000;
+	front: 10px sans-serif;
+	text-anchor: end;
+}
+
+text.chart-value {
+	visibility: hidden;
+}
+
+.axis text {
+	font: 10px sans-serif;
+	visibility:visible;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+.x-axis path {
+  display: none;
+}

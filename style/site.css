@@ -2,29 +2,10 @@ body {
 	font-size: 14px;
 	font-family: Verdana sans-serif;
 }
-.chart { padding:10px 0; }
-.chart rect { fill: steelblue; }
-.chart text {
-	fill: #000;
-	front: 10px sans-serif;
-	text-anchor: end;
-}
-text.chart-value {
-	visibility: hidden;
-}
 
-.axis text {
-	font: 10px sans-serif;
-	visibility:visible;
-}
-.axis path,
-.axis line {
-	fill: none;
-	stroke: #000;
-	shape-rendering: crispEdges;
-}
-.x-axis path {
-  display: none;
+#main-container {
+	width:900px;
+	margin:0 auto;
 }
 
 .reference-links li {

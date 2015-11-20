@@ -1,7 +1,7 @@
 var data = [4, 8, 15, 16, 23, 42, 1, 9, 66, 42, 0, ];
 var margin = {top: 20, right: 30, bottom: 30, left:40};
-var width = 960 - margin.left - margin.right;
-var height = 500 - margin.top - margin.bottom;
+var width = 800 - margin.left - margin.right;
+var height = 400 - margin.top - margin.bottom;
 
 /** Build vertically
  **/
