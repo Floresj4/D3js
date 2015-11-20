@@ -3,6 +3,8 @@ var margin = {top: 20, right: 30, bottom: 30, left:40};
 var width = 960 - margin.left - margin.right;
 var height = 500 - margin.top - margin.bottom;
 
+/** Build vertically
+ **/
 function build_vertical() {
 	var yscale = d3.scale.linear()
 		.range([height, 0]);
@@ -64,6 +66,7 @@ function build_vertical() {
 			.attr("width", xscale.rangeBand());
 
 		bar.append("text")
+			.attr("class", "chart-value")
 			.attr("x", xscale.rangeBand() / 2)
 			.attr("y", function(d) { return yscale(d.value) + 3; })
 			.attr("dy", ".75em")
@@ -71,13 +74,15 @@ function build_vertical() {
 	});
 }
 
+/** Build horizontally
+ **/
 function build_horizontal() {
 	var width = 420;
 	var barHeight = 20;
-	
+
 	var linearScale = d3.scale.linear()
 		.range([0, width]);
-	
+
 	var chart = d3.select(".chart")
 		.attr("width", width);
 
@@ -85,10 +90,10 @@ function build_horizontal() {
 		linearScale.domain([0, d3.max(data, function(d) {
 			return d.value;
 		})]);
-		
+
 		//set the height before display
 		chart.attr("height", barHeight * data.length);
-		
+
 		var bar = chart.selectAll("g")
 			.data(data)
 			.enter().append("g")
@@ -110,6 +115,8 @@ function build_horizontal() {
 	});
 }
 
+/** type coercion
+ **/
 function type(d) {
 	//coerce to number
 	d.value = +d.value;
