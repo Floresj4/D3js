@@ -6,19 +6,24 @@
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<link rel='stylesheet' type='text/css' href="style/site.css" />
 	<link rel='stylesheet' type='text/css' href="style/strategy.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 	<script type='text/javascript'>
 		var data = [32, 57, 112, 52];
-		
+
 		function draw() {
 			var circle = d3.selectAll("circle")
 				.data(data);
-			
+
 			//fiddling...
 			circle.attr("r", function(d) { return Math.sqrt(d); })
 				.attr("cx", function(d) { return Math.random() * 720; })
 				.attr("cy", function(d) { return Math.random() * 120; });
 		}
-		
+
 		window.onload = function() {
 			draw();
 			setInterval(draw, 1000);
@@ -26,7 +31,7 @@
 	</script>
 </head>
 <body>
-	
+
 	<div id='main-container'>
 
 		<div>
@@ -37,18 +42,15 @@
 			</svg>
 		</div>
 
-		<p>Under construction...</p>
+		<h2>Calorie tracking...</h2>
 		
 		<ul class='reference-links'>
 			<li>
-				<a href='demo.html'>D3 Demo</a> graph
+				<small><a href='https://developer.mozilla.org/en-US/docs/Web/SVG'>Scalable Vector Graphics (SVG)</a> 
+					reference by Mozilla Developer Network.</small>
 			</li>
 			<li>
-				<a href='https://developer.mozilla.org/en-US/docs/Web/SVG'>Scalable Vector Graphics (SVG)</a> 
-					reference by Mozilla Developer Network.
-			</li>
-			<li>
-				<a href='d3js.org'>Data Driven Dcouments (d3)</a> JavaScript framework
+				<small><a href='d3js.org'>Data Driven Documents (d3)</a> JavaScript framework</small>
 			</li>
 		</ul>
 		
