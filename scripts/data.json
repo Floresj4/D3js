@@ -1,3 +1,262 @@
-{
-
-}
+[{
+    "date": "1/30/2017",
+    "avg_calories": "",
+    "note": "Recently returned from vacation.  Gained some weight...",
+    "day": "Monday",
+    "weight": "190",
+    "calories": "1626",
+    "avg_weight": ""
+}
+,{
+    "date": "1/31/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Tuesday",
+    "weight": "185",
+    "calories": "1400",
+    "avg_weight": ""
+}
+,{
+    "date": "2/1/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Wednesday",
+    "weight": "183.6",
+    "calories": "1621",
+    "avg_weight": ""
+}
+,{
+    "date": "2/2/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Thursday",
+    "weight": "182.8",
+    "calories": "2335",
+    "avg_weight": ""
+}
+,{
+    "date": "2/3/2017",
+    "avg_calories": "1812.4",
+    "note": "",
+    "day": "Friday",
+    "weight": "182.6",
+    "calories": "2080",
+    "avg_weight": "184.8"
+}
+,{
+    "date": "2/4/2017",
+    "avg_calories": "",
+    "note": "Superbowl weekend lots of food",
+    "day": "Saturday",
+    "weight": "182.6",
+    "calories": "3500",
+    "avg_weight": ""
+}
+,{
+    "date": "2/5/2017",
+    "avg_calories": "2366.0",
+    "note": "",
+    "day": "Sunday",
+    "weight": "183",
+    "calories": "4000",
+    "avg_weight": "184.2"
+}
+,{
+    "date": "2/6/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Monday",
+    "weight": "184.8",
+    "calories": "1707",
+    "avg_weight": ""
+}
+,{
+    "date": "2/7/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Tuesday",
+    "weight": "181.8",
+    "calories": "1927",
+    "avg_weight": ""
+}
+,{
+    "date": "2/8/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Wednesday",
+    "weight": "181.2",
+    "calories": "1735",
+    "avg_weight": ""
+}
+,{
+    "date": "2/9/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Thursday",
+    "weight": "180.2",
+    "calories": "1948",
+    "avg_weight": ""
+}
+,{
+    "date": "2/10/2017",
+    "avg_calories": "1943",
+    "note": "",
+    "day": "Friday",
+    "weight": "180",
+    "calories": "2398",
+    "avg_weight": "181.6"
+}
+,{
+    "date": "2/11/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Saturday",
+    "weight": "179.6",
+    "calories": "1807",
+    "avg_weight": ""
+}
+,{
+    "date": "2/12/2017",
+    "avg_calories": "1925.0",
+    "note": "",
+    "day": "Sunday",
+    "weight": "181",
+    "calories": "1953",
+    "avg_weight": "181.2"
+}
+,{
+    "date": "2/13/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Monday",
+    "weight": "178.6",
+    "calories": "2282",
+    "avg_weight": ""
+}
+,{
+    "date": "2/14/2017",
+    "avg_calories": "",
+    "note": "Valentine's day cheat meal",
+    "day": "Tuesday",
+    "weight": "177.8",
+    "calories": "2861",
+    "avg_weight": ""
+}
+,{
+    "date": "2/15/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Wednesday",
+    "weight": "178.2",
+    "calories": "2024",
+    "avg_weight": ""
+}
+,{
+    "date": "2/16/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Thursday",
+    "weight": "178",
+    "calories": "1718",
+    "avg_weight": ""
+}
+,{
+    "date": "2/17/2017",
+    "avg_calories": "2120.6",
+    "note": "",
+    "day": "Friday",
+    "weight": "177.6",
+    "calories": "1718",
+    "avg_weight": "178.7"
+}
+,{
+    "date": "2/18/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Saturday",
+    "weight": "177.8",
+    "calories": "2846",
+    "avg_weight": ""
+}
+,{
+    "date": "2/19/2017",
+    "avg_calories": "2213.1",
+    "note": "",
+    "day": "Sunday",
+    "weight": "178.8",
+    "calories": "2043",
+    "avg_weight": "178.1"
+}
+,{
+    "date": "2/20/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Monday",
+    "weight": "177.8",
+    "calories": "",
+    "avg_weight": ""
+}
+,{
+    "date": "2/21/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Tuesday",
+    "weight": "",
+    "calories": "",
+    "avg_weight": ""
+}
+,{
+    "date": "2/22/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Wednesday",
+    "weight": "",
+    "calories": "",
+    "avg_weight": ""
+}
+,{
+    "date": "2/23/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Thursday",
+    "weight": "",
+    "calories": "",
+    "avg_weight": ""
+}
+,{
+    "date": "2/24/2017",
+    "avg_calories": "0",
+    "note": "",
+    "day": "Friday",
+    "weight": "",
+    "calories": "",
+    "avg_weight": "76.3"
+}
+,{
+    "date": "2/25/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Saturday",
+    "weight": "",
+    "calories": "",
+    "avg_weight": ""
+}
+,{
+    "date": "2/26/2017",
+    "avg_calories": "0.0",
+    "note": "",
+    "day": "Sunday",
+    "weight": "",
+    "calories": "",
+    "avg_weight": "25.4"
+}
+,{
+    "date": "2/27/2017",
+    "avg_calories": "",
+    "note": "",
+    "day": "Monday",
+    "weight": "",
+    "calories": "",
+    "avg_weight": ""
+}
+]
